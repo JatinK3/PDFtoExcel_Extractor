@@ -31,18 +31,21 @@ GEMINI_API_KEY=YOUR_API_KEY_HERE
 You can get a free API key from:
 🔗 https://aistudio.google.com/
 
-📁 Project Structure 
+📁 Project Structure
 
-📂 YourProject/
+ PDFtoExcel_Extractor/
  ├── main.py
  ├── Data Input.pdf
+ ├── Output.xlsx
  ├── .env
  ├── README.md
  └── requirements.txt
 
 ▶️ How to Run
+There are two ways you can run this program:
+
 1.
-Default (uses Data Input.pdf and outputs Output.xlsx)
+Default (Uses input ( Data Input.pdf ) and outputs ( Output.xlsx ) )
 python main.py
 
 2.
