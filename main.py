@@ -154,7 +154,7 @@ def write_to_excel(rows, full_text_backup, out_path: Path):
 
 def main():
     inp = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("Data Input.pdf")
-    out = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("Structured Output (GENERATED).xlsx")
+    out = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("Output.xlsx")
 
     if not inp.exists():
         print(f"Input file not found: {inp}")

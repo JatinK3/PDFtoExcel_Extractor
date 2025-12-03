@@ -42,7 +42,7 @@ You can get a free API key from:
 
 ▶️ How to Run
 1.
-Default (uses Data Input.pdf and outputs Structured Output (Generated).xlsx)
+Default (uses Data Input.pdf and outputs Output.xlsx)
 python main.py
 
 2.
@@ -52,10 +52,10 @@ python main.py "path/to/input.pdf" "path/to/output.xlsx"
 Example:
 python main.py "./samples/resume.pdf" "./out/resume_extracted.xlsx"
 
-📤 Output Files
-Structured Output (Generated).xlsx
+- Output Files
+Output.xlsx.xlsx
 
-🧠 How It Works (Summary)
+- How It Works (Summary)
 PDF text is extracted with pdfplumber
 Text is split into safe LLM chunks
 Each chunk is sent to Gemini 2.5 Flash with a structured-extraction prompt
@@ -64,14 +64,14 @@ JSON is parsed and written to Excel
 Any errors or malformed model output are stored as __UNSTRUCTURED__ rows (no data loss)
 
 
-❗Important Notes
+- Important Notes
 The script does not predefine keys — key inference is fully LLM-driven
 It does not summarize or remove text
 It works on text-layer PDFs (no OCR)
 Only the Google google-genai client is used (not REST API)
 
 
-🏆 Ideal For
+- Ideal For
 AI/Data engineering tasks
 Document automation
 Resume/document parsing
